@@ -1,0 +1,221 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.padding-site {
+    padding: 0 230px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header-logo {
+    margin: 0 41px 0 0;
+    height: 38px;
+}
+
+.header-search {
+    box-sizing: border-box;
+    height: 30px;
+    display: flex;
+    flex-grow: 2;
+
+}
+
+#header-search-switcher {
+    display: none;
+}
+
+#header-search-switcher:checked ~ .header-search-input {
+    display: none;
+}
+
+
+.header-search-ico {
+    display: block;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+}
+
+.header-search-input {
+
+}
+
+.header-menu {
+    margin: 0 33px 0 0;
+    padding: 0px 0 0 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.header-menu:active {
+    outline: 1px solid white;
+}
+
+
+.header-account {
+    display: block;
+    padding: 0 0 0 0;
+    margin: 0 33px 0 0;
+    box-sizing: border-box;
+
+}
+
+.header-account:active {
+    outline: 1px solid white;
+}
+
+.header-basket {
+    padding: 0;
+    box-sizing: border-box;
+    height: 39px;
+}
+
+.header-basket:active {
+    outline: 1px solid white;
+}
+
+
+.header-basket-link {
+}
+
+.header-basket-ico {
+
+}
+
+.header-basket-count {
+
+}
+
+.header-basket-number {
+
+}
+
+.slider {
+    display: flex;
+    background-color: #F1E4E6;
+}
+
+.slider-photo {
+
+}
+
+.heading-h1 {
+    margin: 290px 0 0 0;
+}
+
+.heading-big-letters {
+    display: block;
+    padding: 0 0 0 16px;
+    border-left: 12px solid #F16D7F;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-size: 48px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.heading-txt {
+    display: block;
+    padding: 0 0 0 16px;
+    border-left: 12px solid #F16D7F;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 32px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.colored-letters {
+    color: #F16D7F;
+}
+
+.categories {
+    box-sizing: border-box;
+    padding-top: 65px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.categories-items {
+    width: 30%;
+    height: 260px;
+    text-decoration: none;
+}
+
+.categories-items-wrp {
+    background: rgba(33, 22, 22, 0.7);
+    height: 100%;
+    box-sizing: border-box;
+    padding: 105px 0 0 0;
+}
+
+.categories-items:nth-child(1) {
+    background-image: url("../img/categories-for_women.jpg");
+}
+
+.categories-items:nth-child(2) {
+    background-image: url("../img/categories-for_men.jpg");
+}
+
+.categories-items:nth-child(3) {
+    background-image: url("../img/categories-for_kids.jpg");
+}
+
+.categories-items:nth-child(4) {
+    background-image: url("../img/categories-accessories.jpg");
+    width: 100%;
+    height: 180px;
+    margin: 30px 0 0 0;
+}
+
+.categories-items:nth-child(4) > div {
+    padding: 65px 0 0 0;
+}
+
+.categories-items-txt {
+    box-sizing: border-box;
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+
+.categories-items-heading {
+    box-sizing: border-box;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    color: #F16D7F;
+
+}
+
+
+
