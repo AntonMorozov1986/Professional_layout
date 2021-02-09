@@ -1,0 +1,24 @@
+@import "variables";
+
+@mixin padding-site {
+  padding: 0 $padding-site;
+}
+
+@mixin border {
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+@mixin hover {
+  background-color: #b02a37;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+@mixin active {
+  background-color: #A4A4A4;
+  box-shadow: none;
+}
+
+@mixin focus {
+  outline: #b02a37 auto 1px;
+}
