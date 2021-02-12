@@ -1,0 +1,409 @@
+/* lato-300 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/lato-v17-latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lato-v17-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-300.woff2") format("woff2"), url("../fonts/lato-v17-latin-300.woff") format("woff"), url("../fonts/lato-v17-latin-300.ttf") format("truetype"), url("../fonts/lato-v17-latin-300.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato-v17-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lato-v17-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-regular.woff2") format("woff2"), url("../fonts/lato-v17-latin-regular.woff") format("woff"), url("../fonts/lato-v17-latin-regular.ttf") format("truetype"), url("../fonts/lato-v17-latin-regular.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lato-v17-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lato-v17-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-700.woff2") format("woff2"), url("../fonts/lato-v17-latin-700.woff") format("woff"), url("../fonts/lato-v17-latin-700.ttf") format("truetype"), url("../fonts/lato-v17-latin-700.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/lato-v17-latin-900.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/lato-v17-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-900.woff2") format("woff2"), url("../fonts/lato-v17-latin-900.woff") format("woff"), url("../fonts/lato-v17-latin-900.ttf") format("truetype"), url("../fonts/lato-v17-latin-900.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+/* ====== HEADER STYLE ====== */
+.page-header {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #F1E4E6;
+}
+.page-header-wrp {
+  padding: 18px 230px;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+}
+.page-header-logo {
+  margin: 0 41px 0 0;
+}
+.page-header-search {
+  flex-grow: 2;
+  display: flex;
+}
+.page-header-search-switcher {
+  display: none;
+}
+.page-header-search-switcher:checked ~ .page-header-search-input {
+  display: block;
+}
+.page-header-search-ico {
+  display: block;
+  margin: 0 20px 0 0;
+  fill: white;
+  width: 28px;
+  height: 27px;
+  padding: 0;
+}
+.page-header-search-ico:hover {
+  fill: #F16D7F;
+}
+.page-header-search-ico:active {
+  fill: greenyellow;
+}
+.page-header-search-input {
+  display: none;
+  width: 80%;
+}
+.page-header-btn-wrp {
+  display: flex;
+  align-items: center;
+}
+.page-header-btn-wrp button {
+  margin: 0 30px 0 0;
+  padding: 3px;
+  background-color: transparent;
+  border: none;
+  fill: white;
+}
+.page-header-btn-wrp button svg {
+  display: block;
+}
+.page-header-btn-wrp button:last-child {
+  margin: 0;
+}
+.page-header-btn-wrp button:hover {
+  fill: #F16D7F;
+}
+.page-header-btn-wrp button:hover .page-header-basket-ico-number {
+  fill: white;
+}
+.page-header-btn-wrp button:active {
+  fill: greenyellow;
+}
+.page-header-basket-ico-circle {
+  fill: #F16D7F;
+}
+.page-header-banner {
+  padding: 60px 230px;
+}
+.page-header-banner-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+
+/* ====== *END* HEADER STYLE ====== */
+/* ====== REGISTRATION STYLE ====== */
+.registration {
+  padding: 64px 230px 96px 230px;
+  display: flex;
+  justify-content: space-between;
+}
+.registration-form {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.registration-form-title {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  text-transform: capitalize;
+}
+.registration-form-text {
+  margin: 0 0 20px 0;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #A4A4A4;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: capitalize;
+  outline: none;
+}
+.registration-form-text:focus {
+  border: 1px solid #F16D7F;
+}
+.registration-form-gender {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.registration-form-gender-radio {
+  margin: 0 5px 0 0;
+}
+.registration-form-gender-label {
+  margin: 0 20px 0 0;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  text-transform: capitalize;
+}
+.registration-form-email {
+  text-transform: none;
+}
+.registration-form-comment {
+  margin: 0 0 40px 0;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration-form-submit {
+  position: relative;
+}
+.registration-form-submit-btn {
+  padding: 15px 66px 15px 30px;
+  box-sizing: border-box;
+  width: 167px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: #F16D7F;
+  border: 1px solid transparent;
+  outline: none;
+}
+.registration-form-submit-btn:hover {
+  background-color: #b02a37;
+}
+.registration-form-submit-btn:focus {
+  border: 1px solid darkred;
+}
+.registration-form-submit-btn:active {
+  background-color: indianred;
+}
+.registration-form-submit-ico {
+  position: absolute;
+  top: 18px;
+  left: 126px;
+  fill: white;
+}
+.registration-advantages {
+  width: 652px;
+}
+.registration-advantages-title {
+  margin: 0 0 22px 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.registration-advantages-txt {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration-advantages-list {
+  list-style-image: url("../img/registration/list-item-ico.svg");
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration-advantages-list-item {
+  margin: 15px 0;
+  padding: 0 10px;
+}
+
+/* ====== *END* REGISTRATION STYLE ====== */
+/* ====== ADDS STYLE ====== */
+.adds {
+  display: flex;
+  background-image: url(../img/cart/adds-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.adds-comment {
+  width: 50%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 97px 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(244, 244, 244, 0.7);
+}
+.adds-comment-avatar {
+  display: block;
+  margin: 0 0 30px 0;
+  width: 96px;
+  height: 96px;
+  background-image: url(../img/cart/comment-avatar.jpg);
+  border-radius: 50%;
+}
+.adds-comment-txt {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+}
+.adds-subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: rgba(244, 244, 244, 0.7);
+  box-sizing: border-box;
+  padding: 155px 0 156px 0;
+}
+.adds-subscribe-title {
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #222224;
+  text-transform: uppercase;
+}
+.adds-subscribe-txt {
+  display: block;
+  margin: 0.5em 0 0 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #222224;
+  text-transform: uppercase;
+}
+.adds-subscribe-form {
+  width: 356px;
+  display: flex;
+  justify-content: center;
+  margin: 27px 0 0 0;
+}
+.adds-subscribe-form-email {
+  display: block;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+  color: #222224;
+  background-color: #E1E1E1;
+}
+.adds-subscribe-form-email:focus {
+  outline: #F16D7F auto 1px;
+  border-radius: 0;
+}
+.adds-subscribe-form-btn {
+  display: block;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  border: none;
+  border-radius: 0 25px 25px 0;
+}
+.adds-subscribe-form-btn:hover {
+  background-color: #b02a37;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.adds-subscribe-form-btn:active {
+  background-color: #A4A4A4;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* ====== *END* ADDS STYLE ====== */
+/* ====== FOOTER STYLE ====== */
+.page-footer {
+  padding: 24px 230px;
+  background-color: #222224;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-footer-rights {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+}
+.page-footer-socials {
+  display: flex;
+}
+.page-footer-socials-link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 8px 0 0;
+}
+.page-footer-socials-link:last-child {
+  margin: 0;
+}
+.page-footer-socials-link:hover .page-footer-socials-background {
+  fill: #F16D7F;
+}
+.page-footer-socials-link:hover .page-footer-socials-ico {
+  fill: white;
+}
+.page-footer-socials-link:active .page-footer-socials-background {
+  fill: #b02a37;
+}
+.page-footer-socials-background {
+  fill: white;
+}
+.page-footer-socials-ico {
+  fill: black;
+}
+
+/* ====== *END* FOOTER STYLE ====== */
+
+/*# sourceMappingURL=registration.css.map */
