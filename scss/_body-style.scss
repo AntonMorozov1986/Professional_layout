@@ -1,0 +1,25 @@
+@import "variables";
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: $site-width;
+  margin: 0 auto;
+}
+
+@media (max-width: $media-width-tablet) {
+  .container {
+    max-width: $width-tablet;
+  }
+}
+
+@media (max-width: $media-width-phone) {
+  .container {
+    max-width: $width-phone;
+  }
+}
