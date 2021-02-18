@@ -1,0 +1,424 @@
+@import "variables";
+@import "mixins";
+
+.cart {
+  max-width: 1140px;
+  margin: 0 auto 128px auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+  &-product {
+    min-width: 652px;
+    &-items {
+      display: flex;
+      flex-wrap: nowrap;
+      text-decoration: none;
+      margin: 40px 0 0 0;
+      box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+
+      &:first-child {
+        margin: 96px 0 0 0;
+      }
+
+      &-img {
+        display: block;
+        //@include border;
+      }
+
+      &-description {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 22px 22px 22px 31px;
+        position: relative;
+        font-weight: 400;
+        font-size: 22px;
+        color: #575757;
+        text-transform: capitalize;
+
+        &-heading {
+          display: block;
+          text-decoration: none;
+          font-size: 24px;
+          color: #222222;
+          text-transform: uppercase;
+
+          &:hover {
+            color: #F16D7F;
+            text-decoration: underline solid #F16D7F;
+          }
+
+          & span {
+            display: block;
+          }
+        }
+
+        &-price {
+          display: block;
+          margin: 42px 0 0 0;
+
+          &-value {
+            margin: 0 0 0 5px;
+            color: #EF5B70;
+          }
+        }
+
+        &-color {
+          display: block;
+          margin: 6px 0 0 0;
+
+          &-value {
+            margin: 0 0 0 5px;
+            color: #6F6E6E;
+          }
+        }
+
+        &-size {
+          display: block;
+          margin: 6px 0 0 0;
+
+          &-value {
+            margin: 0 0 0 5px;
+            color: #6F6E6E;
+            text-transform: uppercase;
+
+          }
+        }
+
+        &-quantity {
+          display: flex;
+          margin: 6px 0 0 0;
+          align-items: center;
+
+          &-value {
+            width: 3em;
+            padding: 0 0 0 13px;
+            margin: 0 0 0 30px;
+            color: #6F6E6E;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 18px;
+            border: 1px solid #EAEAEA;
+
+            &:focus {
+              outline: #DADADA auto 1px;
+            }
+          }
+        }
+
+        &-delete {
+          background-color: transparent;
+          display: block;
+          width: 22px;
+          height: 22px;
+          box-sizing: border-box;
+          position: absolute;
+          top: 28px;
+          right: 22px;
+          padding: 2px;
+          fill: #575757;
+          border: none;
+
+          &:hover {
+            @include hover;
+            fill: white;
+          }
+
+          &:active {
+            @include active;
+          }
+
+          &:focus {
+            @include focus;
+          }
+        }
+      }
+    }
+
+    &-wrp {
+      margin: 71px 0 0 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-btn {
+      padding: 17px 40px;
+      font-weight: 300;
+      font-size: 14px;
+      color: #000000;
+      text-transform: uppercase;
+      background-color: #fff;
+      border: 1px solid #A4A4A4;
+
+      &:hover {
+        @include hover;
+        color: white;
+      }
+
+      &:active {
+        @include active;
+      }
+
+      &:focus {
+        @include focus;
+      }
+    }
+  }
+
+
+  &-info {
+    padding: 0;
+    margin: 96px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 360px;
+    align-content: flex-start;
+
+    &-shipping {
+      width: 100%;
+      &-txt {
+        display: block;
+        font-weight: 300;
+        font-size: 16px;
+        color: #222222;
+        text-transform: uppercase;
+      }
+
+      &-input {
+        display: block;
+        margin: 20px 0 0 0;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #A4A4A4;
+        border-radius: 0;
+        padding: 15px 17px;
+        height: 45px;
+        font-weight: 300;
+        font-size: 13px;
+        color: #222222;
+
+        &:focus {
+          outline: #F16D7F auto 1px;
+        }
+      }
+
+      &-request {
+        display: block;
+        margin: 23px 0 0 0;
+        padding: 10px 15px;
+        border: 1px solid #A4A4A4;
+        text-transform: uppercase;
+        background-color: #fff;
+        font-weight: 300;
+        font-size: 11px;
+        color: #4A4A4A;
+
+        &:hover {
+          @include hover;
+          color: white;
+        }
+
+        &:active {
+          @include active;
+        }
+
+        &:focus {
+          @include focus;
+        }
+      }
+
+    }
+
+    &-cost {
+      box-sizing: border-box;
+      margin: 57px 0 0 0;
+      padding: 40px;
+      width: 100%;
+      background-color: #F5F3F3;
+
+      &-summary {
+        display: block;
+        font-weight: 400;
+        font-size: 11px;
+        color: #4A4A4A;
+        text-transform: uppercase;
+        text-align: right;
+
+        &-value {
+          margin: 0 0 0 2em;
+        }
+      }
+
+      &-total {
+        display: block;
+        margin: 12px 0 0 0;
+        font-weight: 300;
+        font-size: 16px;
+        color: #222222;
+        text-transform: uppercase;
+        text-align: right;
+
+        &:after {
+          content: '';
+          display: block;
+          margin: 20px 0;
+          width: 100%;
+          height: 1px;
+          background-color: #E2E2E2;
+        }
+
+        &-value {
+          margin: 0 0 0 2em;
+          font-weight: 700;
+          color: #F16D7F;
+        }
+      }
+
+      &-checkout {
+        display: block;
+        width: 100%;
+        padding: 15px 38px;
+        box-sizing: border-box;
+        border: none;
+        background-color: #F16D7F;
+        font-weight: 300;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+
+        &:hover {
+          @include hover;
+        }
+
+        &:active {
+          @include active;
+        }
+
+        &:focus {
+          outline: #b02a37 auto 1px;
+        }
+      }
+    }
+  }
+}
+
+
+// =======================================
+// *** MEDIA QUERIES ***
+
+
+
+@media (max-width: $media-width-tablet) {
+  .cart {
+    max-width: 734px;
+    flex-direction: column;
+
+    &-product {
+      min-width: 100%;
+      &-wrp {
+        justify-content: space-evenly;
+      }
+    }
+
+    &-info {
+      margin: 64px 0 0 0;
+      flex-wrap: nowrap;
+      max-width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      &-shipping {
+        max-width: 360px;
+      }
+
+      &-cost {
+        margin: 20px 0 0 0;
+        max-width: 360px;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-width-phone) {
+  .cart {
+    max-width: 358px;
+    margin: 0 auto 64px auto;
+
+    &-product {
+      &-items {
+        margin: 32px 0 0 0;
+
+        &:first-child {
+          margin: 39px 0 0 0;
+        }
+
+        &-img {
+          max-height: 188px;
+        }
+
+        &-description {
+          padding: 13px 13px 13px 17px;
+          font-size: 14px;
+          line-height: 17px;
+
+          &-heading {
+            font-size: 16px;
+            line-height: 19px;
+          }
+
+          &-price {
+            margin: 25px 0 0 0;
+          }
+
+
+
+
+          &-quantity {
+            &-value {
+              padding: 0 0 0 0;
+              font-size: 10px;
+              line-height: 12px;
+            }
+          }
+
+          &-delete {
+            width: 14px;
+            height: 14px;
+
+            & svg {
+              display: block;
+              width: 10px;
+              height: 10px;
+            }
+          }
+        }
+      }
+
+      &-wrp {
+        margin: 30px 0 0 0;
+        justify-content: space-between;
+      }
+
+      &-btn {
+        padding: 0;
+        min-width: 175px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 33px;
+        text-align: center;
+        text-transform: capitalize;
+      }
+    }
+
+
+    &-info {
+      margin: 48px 0 0 0;
+      flex-wrap: wrap;
+      align-content: flex-start;
+
+      &-cost {
+        margin: 48px 0 0 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import "variables";
+@import "mixins";
+
+
+.page-footer {
+  padding: 24px $padding-site;
+  background-color: #222224;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-rights {
+    margin: 0;
+    font-size: 16px;
+    color: #FBFBFB;
+    text-transform: capitalize;
+  }
+
+  &-socials {
+    display: flex;
+
+    &-link {
+      margin: 0 8px 0 0;
+      width: 32px;
+      height: 32px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      &:hover .page-footer-socials-background {
+        fill: #F16D7F;
+      }
+
+      &:hover .page-footer-socials-ico {
+        fill: #FFFFFF;
+      }
+
+      &:active .page-footer-socials-ico {
+        fill: #222;
+      }
+    }
+
+    &-background {
+      fill: white;
+    }
+
+    &-ico {
+      fill: black;
+    }
+  }
+}
+
+@media (max-width: $media-width-1) {
+  .page-footer {
+    padding: 24px ($padding-site - 150px);
+  }
+}
+
+@media (max-width: $media-width-tablet) {
+  .page-footer {
+    padding: 24px 32px;
+  }
+}
+
+@media (max-width: $media-width-phone) {
+  .page-footer {
+    padding: 43px 0 15px 0;
+    flex-direction: column;
+
+    &-rights {
+      order: 2;
+    }
+
+    &-socials {
+      order: 1;
+      margin: 0 0 40px 0;
+    }
+  }
+}
